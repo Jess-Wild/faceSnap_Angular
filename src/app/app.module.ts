@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { registerLocaleData } from '@angular/common';
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: "fr-FR"}
