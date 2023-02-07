@@ -1,5 +1,5 @@
 <div class="landing-block">
-  <form (ngSubmit)="onSubmitForm()">
+  <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
     <label for="emailInput">
       Inscrivez-vous pour recevoir notre newsletter !
     </label>
@@ -10,6 +10,7 @@
       name="userEmail"
       placeholder="Votre email"
     />
+
     <button type="submit">OK!</button>
   </form>
   <img src="assets/snapface.png" alt="Snapface logo" />
