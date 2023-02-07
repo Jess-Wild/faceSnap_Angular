@@ -26,7 +26,7 @@ export class FaceSnapListComponent implements OnInit, OnDestroy {
     ).subscribe();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void{
     this.destroy$.next(true);
   }
 
