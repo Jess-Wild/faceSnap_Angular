@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FaceSnap } from '../models/face-snap.model';
